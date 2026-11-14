@@ -6,7 +6,7 @@ A queue management system for counters, clinics and service desks. Managers crea
 
 ## Live Demo
 
-- **Frontend:** https://queue-pilot-psi.vercel.app/login
+- **Frontend:** https://queue-pilot-psi.vercel.app
 - **Backend API:** https://queuepilot-kp1u.onrender.com
 
 ## 🔐 Demo Login
