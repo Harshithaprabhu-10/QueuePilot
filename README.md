@@ -17,12 +17,12 @@ You need Node.js 18+ and a free MongoDB Atlas cluster.
 ```bash
 cd backend
 npm install
-cp .env.example .env        # Windows PowerShell: copy .env.example .env
+cp .env.example .env        
 ```
 Open `backend/.env` and set `MONGODB_URI` (your Atlas string) and `JWT_SECRET` (any long random text). Then:
 ```bash
-npm run seed                # optional: creates demo data (see below)
-npm run dev                 # API on http://localhost:5000
+npm run seed                # Creates Demo data
+npm run dev                 # API on http://localhost:500
 ```
 
 ### 3. Frontend (second terminal)
@@ -95,8 +95,3 @@ All routes are under `/api`. Everything except `/auth/register`, `/auth/login` a
 cd frontend && npm run build    # outputs frontend/dist
 ```
 Set `VITE_API_URL` to your deployed API's origin before building, and set `CLIENT_URL` in the backend `.env` to the frontend's URL so CORS allows it.
-
-## Troubleshooting
-- **"MongoDB connection failed"**: check the password in the URI (URL-encode special characters) and the Atlas IP allow-list.
-- **"Cannot reach the server"**: make sure `npm run dev` is running in `backend/` on port 5000.
-- **Port already in use**: change `PORT` in `backend/.env` and the proxy target in `frontend/vite.config.js`.
