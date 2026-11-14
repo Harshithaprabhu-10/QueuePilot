@@ -4,6 +4,16 @@ A queue management system for counters, clinics and service desks. Managers crea
 
 **Stack:** React + Vite · Tailwind CSS · Node + Express · MongoDB Atlas + Mongoose · JWT + bcrypt · Recharts · Lucide
 
+## Live Demo
+
+- **Frontend:** https://queue-pilot-psi.vercel.app/login
+- **Backend API:** https://queuepilot-kp1u.onrender.com
+
+## 🔐 Demo Login
+
+- **Email:** demo@queuepilot.com
+- **Password:** demo1234
+
 ## Quick start
 
 You need Node.js 18+ and a free MongoDB Atlas cluster.
